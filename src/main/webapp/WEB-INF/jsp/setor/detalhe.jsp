@@ -21,27 +21,27 @@
 
 		<div class="container-fluid" style="margin-top: 80px">
 			<c:import url="/WEB-INF/jsp/header.jsp" />
-
-
-			<form action="/setor" method="post">
-
-				<div class="form-group">
-					<label for="usr">Nome:</label> <input type="text"
-						class="form-control" name="nome">
-				</div>
-
-				<div class="form-group">
-					<label for="usr">Descrição:</label> <input type="text"
-						class="form-control" name="descricao">
-				</div>
-
-				<button type="submit" class="btn btn-primary">Cadastrar</button>
-			</form>
-
-			<p>
-				<a href="/voltar">Voltar</a>
-			</p>
 		</div>
+
+		<form action="/setor" method="post">
+
+			<div class="form-group">
+				<label for="usr">Nome:</label> <input type="text"
+					class="form-control" name="nome">
+			</div>
+
+			<div class="form-group">
+				<label for="usr">Descrição:</label> <input type="text"
+					class="form-control" name="descricao">
+			</div>
+
+			<button type="submit" class="btn btn-primary">Cadastrar</button>
+		</form>
+
+		<p>
+			<a href="/voltar">Voltar</a>
+		</p>
+
 	</div>
 
 </body>

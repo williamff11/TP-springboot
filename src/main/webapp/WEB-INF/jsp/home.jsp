@@ -21,13 +21,25 @@
 	<div class="container">
 
 		<div class="container-fluid" style="margin-top: 80px">
-
 			<c:import url="/WEB-INF/jsp/header.jsp" />
+		</div>
 
-
+		<div class="card" style="width: 600px">
+			<img class="card-img-top"
+				src="https://www.infnet.edu.br/infnet/wp-content/uploads/sites/6/2018/01/logotipo.png"
+				alt="Instituto Infnet">
+			<div class="card-body">
+				<h4 class="card-title">William Felicio Freire</h4>
+				<p class="card-text">Engenharia de Software</p>
+				<p class="card-text">TP3 :: Desenvolvimento Web com Java EE</p>
+				<a target="_blank"
+					href="https://github.com/williamff11/TP-springboot"
+					class="btn btn-secondary">GIT</a>
+			</div>
 		</div>
 
 	</div>
+
 
 </body>
 </html>

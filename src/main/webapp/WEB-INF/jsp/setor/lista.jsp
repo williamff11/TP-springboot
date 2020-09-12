@@ -16,10 +16,11 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-
 	<div class="container">
-		<c:import url="/WEB-INF/jsp/header.jsp" />
 
+		<div class="container-fluid" style="margin-top: 80px">
+			<c:import url="/WEB-INF/jsp/header.jsp" />
+		</div>
 		<h4>Setores</h4>
 		<a href="setor" class="btn btn-success">Adicionar</a>
 		<table class="table table-striped">

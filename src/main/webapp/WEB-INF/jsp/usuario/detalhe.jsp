@@ -20,45 +20,41 @@
 	<div class="container">
 
 		<div class="container-fluid" style="margin-top: 80px">
-
-			<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-				<a class="navbar-brand" href="/sair">Sistema Facilitador de
-					Almoxarifado</a>
-			</nav>
-
-			<form action="/usuario" method="post">
-
-				<div class="form-group">
-					<label for="usr">Nome:</label> <input type="text"
-						class="form-control" name="nome">
-				</div>
-
-				<div class="form-group">
-					<label for="usr">Login:</label> <input type="text"
-						class="form-control" name="login">
-				</div>
-
-				<div class="form-group">
-					<label for="usr">Senha:</label> <input type="password"
-						class="form-control" name="senha">
-				</div>
-				<div class="form-group">
-					<label for="usr">Setor</label> <select name="setor.id"
-						class="form-control">
-						<c:forEach var="setor" items="${listaSetor}">
-							<option value="${setor.id}">${setor.id}- ${setor.nome}</option>
-						</c:forEach>
-					</select>
-				</div>
-
-
-				<button type="submit" class="btn btn-primary">Cadastrar</button>
-			</form>
-
-			<p>
-				<a href="/voltar">Voltar</a>
-			</p>
+			<c:import url="/WEB-INF/jsp/header.jsp" />
 		</div>
+
+		<form action="/usuario" method="post">
+
+			<div class="form-group">
+				<label for="usr">Nome:</label> <input type="text"
+					class="form-control" name="nome">
+			</div>
+
+			<div class="form-group">
+				<label for="usr">Login:</label> <input type="text"
+					class="form-control" name="login">
+			</div>
+
+			<div class="form-group">
+				<label for="usr">Senha:</label> <input type="password"
+					class="form-control" name="senha">
+			</div>
+			<div class="form-group">
+				<label for="usr">Setor</label> <select name="setor.id"
+					class="form-control">
+					<c:forEach var="setor" items="${listaSetor}">
+						<option value="${setor.id}">${setor.id}-${setor.nome}</option>
+					</c:forEach>
+				</select>
+			</div>
+
+
+			<button type="submit" class="btn btn-primary">Cadastrar</button>
+		</form>
+
+		<p>
+			<a href="/voltar">Voltar</a>
+		</p>
 	</div>
 
 </body>
